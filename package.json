@@ -1,0 +1,49 @@
+{
+  "name": "daoc-spellcraft-client",
+  "version": "0.0.1",
+  "description": "daoc spellcraft client",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "neutrino test --use neutrino-preset-node neutrino-preset-mocha",
+    "start": "neutrino start --use neutrino-preset-react",
+    "build:production": "neutrino build",
+    "build:development": "neutrino build --use neutrino-preset-hydra-development",
+    "get-schema": "get-graphql-schema http://localhost:3000/graphql/schema.json > schema.graphql",
+    "relay": "npm run get-schema && relay-compiler --watch --src . --schema ./schema.graphql --extensions js jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com//issues"
+  },
+  "homepage": "https://github.com/#readme",
+  "devDependencies": {
+    "babel-plugin-relay": "^1.0.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.48.0",
+    "get-graphql-schema": "^2.0.0",
+    "neutrino": "^6.1.4",
+    "neutrino-middleware-html-template": "^6.1.4",
+    "neutrino-preset-react": "^6.1.4",
+    "react-hot-loader": "next",
+    "relay-compiler": "^1.0.0",
+    "sync-request": "^4.1.0"
+  },
+  "dependencies": {
+    "farce": "^0.2.1",
+    "found": "^0.3.1",
+    "found-relay": "^0.3.0-alpha.1",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-relay": "^1.0.0",
+    "recompose": "^0.23.5"
+  }
+}
