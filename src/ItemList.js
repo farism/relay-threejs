@@ -1,20 +1,20 @@
-import graphql from 'graphql';
+import { graphql } from 'graphql';
 import React, { PropTypes } from 'react';
-import Route from 'found/lib/Route';
+import { Link } from 'found';
 import { getContext } from 'recompose';
-
-import prepareIdVariables from './prepareIdVariables';
 
 const relayContext = (Component) => getContext({
   relay: PropTypes.shape({}),
 })(Component);
 
 export const query = graphql`
-  query ReportQuery($reportID: Int!) {
-    report(id: $reportID) {
-      id
-      name
-      ...ReportTabs_report
+  query ItemListQuery {
+    items {
+      count
+      data {
+        id
+        name
+      }
     }
   }
 `;
@@ -22,6 +22,13 @@ export const query = graphql`
 export const Component = (props) => {
   return (
     <div>
+      <ul>
+        {props.items.data.map(item => (
+          <li key={item.id}>
+            <Link to={`/items/${item.id}`}>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
       {props.children}
     </div>
   );
@@ -30,6 +37,5 @@ export const Component = (props) => {
 export const routeConfig = path => ({
   Component: Component,
   path,
-  prepareVariables: prepareIdVariables('reportID'),
   query,
 });

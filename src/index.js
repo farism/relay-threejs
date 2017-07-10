@@ -13,17 +13,21 @@ import { AppContainer } from 'react-hot-loader';
 
 import App from './App'
 
+const KEY = 'authToken';
+let token = localStorage.getItem(KEY);
+
 const fetchQuery = (
   operation,
   variables,
   cacheConfig,
   uploadables,
 ) => {
-  return fetch('/graphql/query', {
+  return fetch('http://localhost:3000/graphql', {
     method: 'POST',
     headers: {
       // Add authentication and other headers here
       // 'Authorization': document.querySelector('meta[name="jwt-token"]').getAttribute('content'),
+      Authorization: token ? `JWT ${token}` : null,
       'content-type': 'application/json'
     },
     body: JSON.stringify({
@@ -48,7 +52,7 @@ const load = () => render((
   <AppContainer>
     <App environment={environment} />
   </AppContainer>
-), document.getElementById('report-viewer'));
+), document.getElementById('root'));
 
 // if (module.hot) {
 //   module.hot.accept('./App', load);

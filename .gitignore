@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.DS_Store
 
 # Runtime data
 pids
@@ -56,3 +57,7 @@ typings/
 
 # dotenv environment variables file
 .env
+
+scripts/bin/
+src/static/models/
+schema.graphql
