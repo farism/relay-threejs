@@ -1,7 +1,8 @@
 import 'mocha'
 import {expect} from 'chai'
 
-import {imbueValues} from '../src/metadata'
+import {imbuePoints, imbueValues} from '../src/metadata'
+import {BonusType} from '../src/types'
 
 import {
   convertBonusToImbuePoints,
@@ -9,16 +10,8 @@ import {
 } from '../src/helpers'
 
 describe('#convertBonusToImbuePoints', () => {
-  const values = imbueValues
-  const imbuePoints = {
-    1: [1, 2, 4, 6, 8, 9, 11, 13, 15, 16],
-    2: [1, 5, 10, 15, 20, 25, 30, 35, 40, 45],
-    4: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19],
-    5: [1, 2, 4, 8, 12, 16, 20, 24, 28, 32],
-  }
-
-  Object.keys(values).forEach((bonusType: string) => {
-    values[bonusType].forEach((value: number, i: number) => {
+  Object.keys(imbueValues).forEach((bonusType: string) => {
+    imbueValues[bonusType].forEach((value: number, i: number) => {
       const actual = convertBonusToImbuePoints(bonusType, value)
       const expected = imbuePoints[bonusType][i]
       it(`converts bonusType ${bonusType} value "${value}" to "${expected} imbue points"`, () => {
