@@ -6,13 +6,42 @@ for(let i = 0; i < 3; i++) {
   for(let j = 0; j < 5; j++) {
     items.push({
       name: `item-${i}-${j}`,
-      strength: getRandomNumber(30),
-      quickness: getRandomNumber(20),
-      meleespeed: getRandomNumber(4),
-      meleedamage: getRandomNumber(3),
-      resist_crush: getRandomNumber(6),
-      resist_slash: getRandomNumber(6),
+      bonuses: [
+        {
+          type: 1,
+          id: 0,
+          value: getRandomNumber(30)
+        },
+        {
+          type: 1,
+          id: 3,
+          value: getRandomNumber(20)
+        },
+        {
+          type: 19,
+          id: null,
+          value: getRandomNumber(4)
+        },
+        {
+          type: 8,
+          id: 0,
+          value: getRandomNumber(3)
+        },
+        {
+          type: 3,
+          id: 18,
+          value: getRandomNumber(6)
+        },
+        {
+          type: 3,
+          id: 4,
+          value: getRandomNumber(10)
+        }
+      ]
     })
   }
+
   slots.push(items)
 }
+
+console.log(JSON.stringify(slots))

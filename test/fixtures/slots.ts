@@ -1,173 +1,410 @@
 export default [
-  [
-    {
-      "name": "item-0-0",
-      bonuses: {
-        "strength": 8,
-        "quickness": 15,
-        "meleespeed": 1,
-        "meleedamage": 2,
-        "resist_crush": 2,
-        "resist_slash": 0
-      }
-    },
-    {
-      "name": "item-0-1",
-      bonuses: {
-        "strength": 12,
-        "quickness": 17,
-        "meleespeed": 0,
-        "meleedamage": 1,
-        "resist_crush": 3,
-        "resist_slash": 4
-      }
-    },
-    {
-      "name": "item-0-2",
-      bonuses: {
-        "strength": 8,
-        "quickness": 13,
-        "meleespeed": 3,
-        "meleedamage": 1,
-        "resist_crush": 0,
-        "resist_slash": 0
-      }
-    },
-    {
-      "name": "item-0-3",
-      bonuses: {
-        "strength": 22,
-        "quickness": 1,
-        "meleespeed": 1,
-        "meleedamage": 2,
-        "resist_crush": 3,
-        "resist_slash": 2
-      }
-    },
-    {
-      "name": "item-0-4",
-      bonuses: {
-        "strength": 100,
-        "quickness": 4,
-        "meleespeed": 0,
-        "meleedamage": 0,
-        "resist_crush": 3,
-        "resist_slash": 5
-      }
-    }
-  ],
-  [
-    {
-      "name": "item-1-0",
-      bonuses: {
-        "strength": 23,
-        "quickness": 9,
-        "meleespeed": 1,
-        "meleedamage": 0,
-        "resist_crush": 2,
-        "resist_slash": 1
-      }
-    },
-    {
-      "name": "item-1-1",
-      bonuses: {
-        "strength": 22,
-        "quickness": 11,
-        "meleespeed": 2,
-        "meleedamage": 0,
-        "resist_crush": 3,
-        "resist_slash": 5
-      }
-    },
-    {
-      "name": "item-1-2",
-      bonuses: {
-        "strength": 19,
-        "quickness": 15,
-        "meleespeed": 0,
-        "meleedamage": 2,
-        "resist_crush": 1,
-        "resist_slash": 4
-      }
-    },
-    {
-      "name": "item-1-3",
-      bonuses: {
-        "strength": 7,
-        "quickness": 60,
-        "meleespeed": 3,
-        "meleedamage": 100,
-        "resist_crush": 2,
-        "resist_slash": 5
-      }
-    },
-    {
-      "name": "item-1-4",
-      bonuses: {
-        "strength": 29,
-        "quickness": 5,
-        "meleespeed": 0,
-        "meleedamage": 0,
-        "resist_crush": 1,
-        "resist_slash": 5
-      }
-    }
-  ],
-  [
-    {
-      "name": "item-2-0",
-      bonuses: {
-        "strength": 20,
-        "quickness": 0,
-        "meleespeed": 1,
-        "meleedamage": 0,
-        "resist_crush": 3,
-        "resist_slash": 3
-      }
-    },
-    {
-      "name": "item-2-1",
-      bonuses: {
-        "strength": 23,
-        "quickness": 5,
-        "meleespeed": 3,
-        "meleedamage": 2,
-        "resist_crush": 2,
-        "resist_slash": 0
-      }
-    },
-    {
-      "name": "item-2-2",
-      bonuses: {
-        "strength": 15,
-        "quickness": 13,
-        "meleespeed": 1,
-        "meleedamage": 2,
-        "resist_crush": 1,
-        "resist_slash": 75
-      }
-    },
-    {
-      "name": "item-2-3",
-      bonuses: {
-        "strength": 2,
-        "quickness": 1,
-        "meleespeed": 2,
-        "meleedamage": 0,
-        "resist_crush": 2,
-        "resist_slash": 1
-      }
-    },
-    {
-      "name": "item-2-4",
-      bonuses: {
-        "strength": 17,
-        "quickness": 11,
-        "meleespeed": 3,
-        "meleedamage": 0,
-        "resist_crush": 0,
-        "resist_slash": 2
-      }
-    }
-  ]
+    [{
+        "name": "item-0-0",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 1
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 15
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 1
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 4
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 9
+        }]
+    }, {
+        "name": "item-0-1",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 27
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 8
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 3
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 9
+        }]
+    }, {
+        "name": "item-0-2",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 28
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 4
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 2
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 1
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 2
+        }]
+    }, {
+        "name": "item-0-3",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 23
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 14
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 3
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 5
+        }]
+    }, {
+        "name": "item-0-4",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 13
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 7
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 2
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 5
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 8
+        }]
+    }],
+    [{
+        "name": "item-1-0",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 6
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 19
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 3
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 4
+        }]
+    }, {
+        "name": "item-1-1",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 18
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 0
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 2
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 4
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 4
+        }]
+    }, {
+        "name": "item-1-2",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 12
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 6
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 2
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 3
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 8
+        }]
+    }, {
+        "name": "item-1-3",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 24
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 6
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 3
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 1
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 8
+        }]
+    }, {
+        "name": "item-1-4",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 26
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 12
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 3
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 1
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 4
+        }]
+    }],
+    [{
+        "name": "item-2-0",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 8
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 16
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 3
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 8
+        }]
+    }, {
+        "name": "item-2-1",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 21
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 1
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 0
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 1
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 2
+        }]
+    }, {
+        "name": "item-2-2",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 19
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 6
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 2
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 0
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 3
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 2
+        }]
+    }, {
+        "name": "item-2-3",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 23
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 2
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 2
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 1
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 3
+        }]
+    }, {
+        "name": "item-2-4",
+        "bonuses": [{
+            "type": 1,
+            "id": 0,
+            "value": 7
+        }, {
+            "type": 1,
+            "id": 3,
+            "value": 1
+        }, {
+            "type": 19,
+            "id": null,
+            "value": 2
+        }, {
+            "type": 8,
+            "id": 0,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 18,
+            "value": 2
+        }, {
+            "type": 3,
+            "id": 4,
+            "value": 2
+        }]
+    }]
 ]

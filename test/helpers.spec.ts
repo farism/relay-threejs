@@ -2,7 +2,6 @@ import 'mocha'
 import { expect } from 'chai'
 
 import {
-  IImbueValues,
   imbueValues,
 } from '../src/metadata'
 
@@ -13,7 +12,7 @@ import {
 
 describe('#convertBonusToImbuePoints', () => {
   const values = imbueValues
-  const imbuePoints: IImbueValues = {
+  const imbuePoints = {
     1: [1, 2, 4, 6, 8, 9, 11, 13, 15, 16],
     2: [1, 5, 10, 15, 20, 25, 30, 35, 40, 45],
     4: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19],
@@ -23,7 +22,7 @@ describe('#convertBonusToImbuePoints', () => {
   Object
     .keys(values)
     .forEach((bonusType: string) => {
-      describe(`converts bonusType: ${bonusType}`, () => {
+      // describe(`converts bonusType: ${bonusType}`, () => {
         values[bonusType].forEach((value: number, i: number) => {
           const actual = convertBonusToImbuePoints(bonusType, value)
           const expected = imbuePoints[bonusType][i]
@@ -31,7 +30,7 @@ describe('#convertBonusToImbuePoints', () => {
             expect(actual).to.eql(expected)
           })
         })
-      })
+      // })
     })
 })
 

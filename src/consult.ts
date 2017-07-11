@@ -1,16 +1,26 @@
-interface IBonus {
-  [key: string]: number;
+import {
+  IItem
+} from './types'
+
+interface IBonuses {
+  [key: number]: number
 }
 
-interface IItem {
-  name: string;
-  bonuses: IBonus[];
-}
+export const getBonusesAsObject = (
+  item: IItem,
+): IBonuses =>
+  item
+    .bonuses
+    .reduce((acc, { id = '', type, value }) => {
+      acc[`${type}-${id}`] = value
+
+      return acc
+    }, {} as IBonuses)
 
 export const getDeltas = (
-  bonuses: IItem,
-  target: IItem,
-): IItem =>
+  bonuses: IBonuses,
+  target: IBonuses,
+): IBonuses =>
   Object
     .keys(target)
     .reduce((acc, key) => {
@@ -20,7 +30,7 @@ export const getDeltas = (
     }, { ...target })
 
 export const sumDeltas = (
-  deltas: IItem,
+  deltas: IBonuses,
 ): number =>
   Object
     .keys(deltas)
@@ -31,32 +41,35 @@ export const sumDeltas = (
     }, 0)
 
 export const pickItem = (
-  target: IItem,
+  target: IBonuses,
   items: IItem[],
 ): IItem =>
-  items.reduce((acc, item) => {
-    const deltas = getDeltas(item, target);
-    const sum = sumDeltas(deltas);
+  items
+    .reduce((acc, item) => {
+      const bonuses = getBonusesAsObject(item)
+      const deltas = getDeltas(bonuses, target)
+      const sum = sumDeltas(deltas)
 
-    if (sum < acc.sum) {
-      return { sum, item };
-    }
+      if (sum < acc.sum) {
+        return { sum, item }
+      }
 
-    return acc;
-  }, {
-    sum: Infinity,
-    item: null as IItem,
-  }).item
+      return acc
+    }, {
+      sum: Infinity,
+      item: null as IItem,
+    }).item
 
 export const pickItems = (
-  target: IItem,
-  slots: [IItem[]],
+  target: IBonuses,
+  slots: Array<IItem[]>,
 ): IItem[] =>
   slots.reduce((acc, items) => {
-    const item = pickItem(target, items);
+    const item = pickItem(target, items)
+    const bonuses = getBonusesAsObject(item)
 
     return {
-      target: getDeltas(item, target),
+      target: getDeltas(bonuses, target),
       items: [...acc.items, item],
     }
   }, {
