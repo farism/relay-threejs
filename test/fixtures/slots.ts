@@ -6,32 +6,30 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 1,
+          value: 29,
         },
         {
           type: 1,
           id: 3,
-          value: 15,
+          value: 9,
         },
         {
           type: 19,
-          id: null,
-          value: 1,
+          value: 0,
         },
         {
           type: 8,
-          id: 0,
-          value: 2,
+          value: 0,
         },
         {
-          type: 3,
+          type: 5,
           id: 18,
-          value: 4,
+          value: 5,
         },
         {
-          type: 3,
+          type: 5,
           id: 4,
-          value: 9,
+          value: 1,
         },
       ],
     },
@@ -41,32 +39,30 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 27,
+          value: 8,
         },
         {
           type: 1,
           id: 3,
-          value: 8,
+          value: 15,
         },
         {
           type: 19,
-          id: null,
           value: 3,
         },
         {
           type: 8,
-          id: 0,
-          value: 2,
-        },
-        {
-          type: 3,
-          id: 18,
           value: 0,
         },
         {
-          type: 3,
+          type: 5,
+          id: 18,
+          value: 4,
+        },
+        {
+          type: 5,
           id: 4,
-          value: 9,
+          value: 8,
         },
       ],
     },
@@ -76,32 +72,30 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 28,
+          value: 7,
         },
         {
           type: 1,
           id: 3,
-          value: 4,
+          value: 17,
         },
         {
           type: 19,
-          id: null,
           value: 2,
         },
         {
           type: 8,
-          id: 0,
-          value: 0,
-        },
-        {
-          type: 3,
-          id: 18,
           value: 1,
         },
         {
-          type: 3,
+          type: 5,
+          id: 18,
+          value: 3,
+        },
+        {
+          type: 5,
           id: 4,
-          value: 2,
+          value: 6,
         },
       ],
     },
@@ -111,30 +105,28 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 23,
+          value: 7,
         },
         {
           type: 1,
           id: 3,
-          value: 14,
+          value: 15,
         },
         {
           type: 19,
-          id: null,
-          value: 3,
+          value: 2,
         },
         {
           type: 8,
-          id: 0,
           value: 0,
         },
         {
-          type: 3,
+          type: 5,
           id: 18,
           value: 2,
         },
         {
-          type: 3,
+          type: 5,
           id: 4,
           value: 5,
         },
@@ -146,32 +138,30 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 13,
+          value: 24,
         },
         {
           type: 1,
           id: 3,
-          value: 7,
+          value: 18,
         },
         {
           type: 19,
-          id: null,
-          value: 2,
+          value: 0,
         },
         {
           type: 8,
-          id: 0,
           value: 2,
         },
         {
-          type: 3,
+          type: 5,
           id: 18,
-          value: 5,
+          value: 3,
         },
         {
-          type: 3,
+          type: 5,
           id: 4,
-          value: 8,
+          value: 5,
         },
       ],
     },
@@ -183,32 +173,30 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 6,
+          value: 21,
         },
         {
           type: 1,
           id: 3,
-          value: 19,
+          value: 8,
         },
         {
           type: 19,
-          id: null,
-          value: 3,
+          value: 0,
         },
         {
           type: 8,
-          id: 0,
           value: 0,
         },
         {
-          type: 3,
+          type: 5,
           id: 18,
-          value: 0,
+          value: 3,
         },
         {
-          type: 3,
+          type: 5,
           id: 4,
-          value: 4,
+          value: 5,
         },
       ],
     },
@@ -218,32 +206,30 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 18,
+          value: 2,
         },
         {
           type: 1,
           id: 3,
-          value: 0,
+          value: 5,
         },
         {
           type: 19,
-          id: null,
-          value: 2,
-        },
-        {
-          type: 8,
-          id: 0,
           value: 0,
         },
         {
-          type: 3,
-          id: 18,
-          value: 4,
+          type: 8,
+          value: 1,
         },
         {
-          type: 3,
+          type: 5,
+          id: 18,
+          value: 0,
+        },
+        {
+          type: 5,
           id: 4,
-          value: 4,
+          value: 0,
         },
       ],
     },
@@ -253,37 +239,235 @@ export default [
         {
           type: 1,
           id: 0,
-          value: 12,
+          value: 21,
         },
         {
           type: 1,
           id: 3,
-          value: 6,
-        },
-        {
-          type: 19,
-          id: null,
           value: 2,
         },
         {
-          type: 8,
-          id: 0,
+          type: 19,
           value: 0,
         },
         {
-          type: 3,
+          type: 8,
+          value: 2,
+        },
+        {
+          type: 5,
           id: 18,
+          value: 2,
+        },
+        {
+          type: 5,
+          id: 4,
+          value: 0,
+        },
+      ],
+    },
+    {
+      name: 'item-1-3',
+      bonuses: [
+        {
+          type: 1,
+          id: 0,
+          value: 14,
+        },
+        {
+          type: 1,
+          id: 3,
+          value: 12,
+        },
+        {
+          type: 19,
           value: 3,
         },
         {
-          type: 3,
+          type: 8,
+          value: 0,
+        },
+        {
+          type: 5,
+          id: 18,
+          value: 4,
+        },
+        {
+          type: 5,
           id: 4,
           value: 8,
         },
       ],
     },
     {
-      name: 'item-1-3',
+      name: 'item-1-4',
+      bonuses: [
+        {
+          type: 1,
+          id: 0,
+          value: 6,
+        },
+        {
+          type: 1,
+          id: 3,
+          value: 18,
+        },
+        {
+          type: 19,
+          value: 3,
+        },
+        {
+          type: 8,
+          value: 1,
+        },
+        {
+          type: 5,
+          id: 18,
+          value: 2,
+        },
+        {
+          type: 5,
+          id: 4,
+          value: 1,
+        },
+      ],
+    },
+  ],
+  [
+    {
+      name: 'item-2-0',
+      bonuses: [
+        {
+          type: 1,
+          id: 0,
+          value: 16,
+        },
+        {
+          type: 1,
+          id: 3,
+          value: 15,
+        },
+        {
+          type: 19,
+          value: 0,
+        },
+        {
+          type: 8,
+          value: 2,
+        },
+        {
+          type: 5,
+          id: 18,
+          value: 2,
+        },
+        {
+          type: 5,
+          id: 4,
+          value: 3,
+        },
+      ],
+    },
+    {
+      name: 'item-2-1',
+      bonuses: [
+        {
+          type: 1,
+          id: 0,
+          value: 6,
+        },
+        {
+          type: 1,
+          id: 3,
+          value: 12,
+        },
+        {
+          type: 19,
+          value: 0,
+        },
+        {
+          type: 8,
+          value: 1,
+        },
+        {
+          type: 5,
+          id: 18,
+          value: 3,
+        },
+        {
+          type: 5,
+          id: 4,
+          value: 6,
+        },
+      ],
+    },
+    {
+      name: 'item-2-2',
+      bonuses: [
+        {
+          type: 1,
+          id: 0,
+          value: 21,
+        },
+        {
+          type: 1,
+          id: 3,
+          value: 4,
+        },
+        {
+          type: 19,
+          value: 0,
+        },
+        {
+          type: 8,
+          value: 1,
+        },
+        {
+          type: 5,
+          id: 18,
+          value: 5,
+        },
+        {
+          type: 5,
+          id: 4,
+          value: 5,
+        },
+      ],
+    },
+    {
+      name: 'item-2-3',
+      bonuses: [
+        {
+          type: 1,
+          id: 0,
+          value: 21,
+        },
+        {
+          type: 1,
+          id: 3,
+          value: 13,
+        },
+        {
+          type: 19,
+          value: 2,
+        },
+        {
+          type: 8,
+          value: 1,
+        },
+        {
+          type: 5,
+          id: 18,
+          value: 5,
+        },
+        {
+          type: 5,
+          id: 4,
+          value: 0,
+        },
+      ],
+    },
+    {
+      name: 'item-2-4',
       bonuses: [
         {
           type: 1,
@@ -297,235 +481,21 @@ export default [
         },
         {
           type: 19,
-          id: null,
           value: 3,
         },
         {
           type: 8,
-          id: 0,
           value: 0,
         },
         {
-          type: 3,
+          type: 5,
           id: 18,
-          value: 1,
-        },
-        {
-          type: 3,
-          id: 4,
-          value: 8,
-        },
-      ],
-    },
-    {
-      name: 'item-1-4',
-      bonuses: [
-        {
-          type: 1,
-          id: 0,
-          value: 26,
-        },
-        {
-          type: 1,
-          id: 3,
-          value: 12,
-        },
-        {
-          type: 19,
-          id: null,
-          value: 3,
-        },
-        {
-          type: 8,
-          id: 0,
-          value: 2,
-        },
-        {
-          type: 3,
-          id: 18,
-          value: 1,
-        },
-        {
-          type: 3,
-          id: 4,
           value: 4,
         },
-      ],
-    },
-  ],
-  [
-    {
-      name: 'item-2-0',
-      bonuses: [
         {
-          type: 1,
-          id: 0,
-          value: 8,
-        },
-        {
-          type: 1,
-          id: 3,
-          value: 16,
-        },
-        {
-          type: 19,
-          id: null,
-          value: 3,
-        },
-        {
-          type: 8,
-          id: 0,
-          value: 0,
-        },
-        {
-          type: 3,
-          id: 18,
-          value: 2,
-        },
-        {
-          type: 3,
+          type: 5,
           id: 4,
-          value: 8,
-        },
-      ],
-    },
-    {
-      name: 'item-2-1',
-      bonuses: [
-        {
-          type: 1,
-          id: 0,
-          value: 21,
-        },
-        {
-          type: 1,
-          id: 3,
-          value: 1,
-        },
-        {
-          type: 19,
-          id: null,
-          value: 0,
-        },
-        {
-          type: 8,
-          id: 0,
-          value: 1,
-        },
-        {
-          type: 3,
-          id: 18,
-          value: 0,
-        },
-        {
-          type: 3,
-          id: 4,
-          value: 2,
-        },
-      ],
-    },
-    {
-      name: 'item-2-2',
-      bonuses: [
-        {
-          type: 1,
-          id: 0,
-          value: 19,
-        },
-        {
-          type: 1,
-          id: 3,
-          value: 6,
-        },
-        {
-          type: 19,
-          id: null,
-          value: 2,
-        },
-        {
-          type: 8,
-          id: 0,
-          value: 0,
-        },
-        {
-          type: 3,
-          id: 18,
-          value: 3,
-        },
-        {
-          type: 3,
-          id: 4,
-          value: 2,
-        },
-      ],
-    },
-    {
-      name: 'item-2-3',
-      bonuses: [
-        {
-          type: 1,
-          id: 0,
-          value: 23,
-        },
-        {
-          type: 1,
-          id: 3,
-          value: 2,
-        },
-        {
-          type: 19,
-          id: null,
-          value: 2,
-        },
-        {
-          type: 8,
-          id: 0,
-          value: 2,
-        },
-        {
-          type: 3,
-          id: 18,
-          value: 1,
-        },
-        {
-          type: 3,
-          id: 4,
-          value: 3,
-        },
-      ],
-    },
-    {
-      name: 'item-2-4',
-      bonuses: [
-        {
-          type: 1,
-          id: 0,
-          value: 7,
-        },
-        {
-          type: 1,
-          id: 3,
-          value: 1,
-        },
-        {
-          type: 19,
-          id: null,
-          value: 2,
-        },
-        {
-          type: 8,
-          id: 0,
-          value: 2,
-        },
-        {
-          type: 3,
-          id: 18,
-          value: 2,
-        },
-        {
-          type: 3,
-          id: 4,
-          value: 2,
+          value: 5,
         },
       ],
     },

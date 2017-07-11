@@ -1,12 +1,21 @@
-import {IItem} from './types'
+import {BonusType, IItem} from './types'
 
-interface IBonuses {
+interface IBonusValue {
   [key: number]: number
 }
 
+interface IBonuses {
+  [key: number]: number | IBonusValue
+}
+
 export const getBonusesAsObject = (item: IItem): IBonuses =>
-  item.bonuses.reduce((acc, {id = '', type, value}) => {
-    acc[`${type}-${id}`] = value
+  item.bonuses.reduce((acc, {id, type, value}) => {
+    if (typeof id === 'number') {
+      acc[type] = acc[type] || {}
+      acc[type][id] = value
+    } else {
+      acc[type] = value
+    }
 
     return acc
   }, {} as IBonuses)
@@ -14,7 +23,11 @@ export const getBonusesAsObject = (item: IItem): IBonuses =>
 export const getDeltas = (bonuses: IBonuses, target: IBonuses): IBonuses =>
   Object.keys(target).reduce(
     (acc, key) => {
-      acc[key] = acc[key] - bonuses[key] || 0
+      if (typeof acc[key] === 'number') {
+        acc[key] = acc[key] - bonuses[key] || 0
+      } else {
+        acc[key] = getDeltas(bonuses[key], acc[key])
+      }
 
       return acc
     },
@@ -23,7 +36,11 @@ export const getDeltas = (bonuses: IBonuses, target: IBonuses): IBonuses =>
 
 export const sumDeltas = (deltas: IBonuses): number =>
   Object.keys(deltas).reduce((acc, key) => {
-    acc += Math.max(0, deltas[key])
+    if (typeof deltas[key] === 'number') {
+      acc += Math.max(0, deltas[key])
+    } else {
+      acc += sumDeltas(deltas[key])
+    }
 
     return acc
   }, 0)
