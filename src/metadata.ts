@@ -25,13 +25,6 @@ export const imbueValues: IImbueValues = {
   [BonusType.Resistance]: [1, 2, 3, 5, 7, 9, 11, 13, 15, 17],
 }
 
-export const imbuePoints = {
-  [BonusType.Stats]: [1, 2, 4, 6, 8, 9, 11, 13, 15, 16],
-  [BonusType.Skills]: [1, 5, 10, 15, 20, 25, 30, 35, 40, 45],
-  [BonusType.Hit_Points]: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19],
-  [BonusType.Resistance]: [1, 2, 4, 8, 12, 16, 20, 24, 28, 32],
-}
-
 // FROM ITEM DB
 
 export const absorption = {
