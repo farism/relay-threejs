@@ -6,15 +6,15 @@ export const convertBonusToImbuePoints = (
   bonusType: string,
   value: number,
 ): number => {
-    const bonusImbueMapping: IConversionMapping = {
-      1: val => Math.floor(val / 1.725),
-      2: val => (val - 1) * 5,
-      4: val => val * 0.25,
-      5: val => (val - 1) * 2,
-    }
-
-    return Math.max(1, bonusImbueMapping[bonusType](value))
+  const bonusImbueMapping: IConversionMapping = {
+    1: val => Math.floor(val / 1.725),
+    2: val => (val - 1) * 5,
+    4: val => val * 0.25,
+    5: val => (val - 1) * 2,
   }
+
+  return Math.max(1, bonusImbueMapping[bonusType](value))
+}
 
 // 1: "Stats",
 // 2: "Skills",
@@ -84,5 +84,5 @@ export const convertBonusToUtilityPoints = (
     75: val => val * 4,
   }
 
-  return bonusUtilityMapping[bonusType](value);
+  return bonusUtilityMapping[bonusType](value)
 }

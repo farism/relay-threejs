@@ -7,28 +7,23 @@ import {
   commitMutation,
   commitLocalUpdate,
 } from 'relay-runtime'
-import React from 'react';
-import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
+import React from 'react'
+import {render} from 'react-dom'
+import {AppContainer} from 'react-hot-loader'
 
 import App from './App'
 
-const KEY = 'authToken';
-let token = localStorage.getItem(KEY);
+const KEY = 'authToken'
+let token = localStorage.getItem(KEY)
 
-const fetchQuery = (
-  operation,
-  variables,
-  cacheConfig,
-  uploadables,
-) => {
+const fetchQuery = (operation, variables, cacheConfig, uploadables) => {
   return fetch('http://localhost:3000/graphql', {
     method: 'POST',
     headers: {
       // Add authentication and other headers here
       // 'Authorization': document.querySelector('meta[name="jwt-token"]').getAttribute('content'),
       Authorization: token ? `JWT ${token}` : null,
-      'content-type': 'application/json'
+      'content-type': 'application/json',
     },
     body: JSON.stringify({
       query: operation.text, // GraphQL text from input
@@ -48,14 +43,16 @@ const environment = new Environment({
   store,
 })
 
-const load = () => render((
-  <AppContainer>
-    <App environment={environment} />
-  </AppContainer>
-), document.getElementById('root'));
+const load = () =>
+  render(
+    <AppContainer>
+      <App environment={environment} />
+    </AppContainer>,
+    document.getElementById('root'),
+  )
 
 // if (module.hot) {
 //   module.hot.accept('./App', load);
 // }
 
-load();
+load()
