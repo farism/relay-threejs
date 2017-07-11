@@ -16,37 +16,6 @@ export const convertBonusToImbuePoints = (
   return Math.max(1, bonusImbueMapping[bonusType](value))
 }
 
-// 1: "Stats",
-// 2: "Skills",
-// 4: "Hit Points",
-// 5: "Resistance",
-// 8: "Toa Melee Damage",
-// 9: "Toa Magic Damage",
-// 10: "Toa Style Damage",
-// 11: "Toa Archery Range",
-// 12: "Toa Spell Range",
-// 13: "Toa Spell Duration",
-// 14: "Toa Buff Bonus",
-// 15: "Toa Debuff Bonus",
-// 16: "Toa Heal Bonus",
-// 17: "Toa Fatigue",
-// 19: "Toa Melee Speed",
-// 20: "Toa Archery Speed",
-// 21: "Toa Cast Speed",
-// 22: "Armor Factor (AF)",
-// 27: "Toa Archery Damage",
-// 28: "Toa Overcap",
-// 29: "Toa Hit Points Cap",
-// 30: "Toa Power Pool Cap",
-// 31: "Toa Fatigue Cap",
-// 32: "Toa Resistance Piece",
-// 34: "Toa Power Pool",
-// 35: "Toa Artifact (Arcane Siphon / Conversion / Radiant Aura / Money / Exp / RPs / BPs)",
-// 64: "Mythical Cap Increase",
-// 68: "Mythical Resist and Cap",
-// 75: "Mythical Stat and Cap Increase",
-// }q
-
 export const convertBonusToUtilityPoints = (
   bonusType: string,
   value: number,

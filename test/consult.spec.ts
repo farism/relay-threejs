@@ -82,7 +82,7 @@ describe('getDelta', () => {
 })
 
 describe('sumDeltas', () => {
-  it('returns all deltas summed', () => {
+  it('returns all deltas summed, discarding negatives', () => {
     const sum = sumDeltas({
       1: 93,
       2: 30,
@@ -96,6 +96,10 @@ describe('sumDeltas', () => {
   })
 })
 
+describe('createItem', () => {
+  it('creates an optimized item given the current target', () => {})
+})
+
 describe('pickItem', () => {
   it('picks the lowest delta item from a list of items', () => {
     const item = pickItem(initialTarget, slots[0])
@@ -104,7 +108,7 @@ describe('pickItem', () => {
   })
 })
 
-describe.only('pickItems', () => {
+describe('pickItems', () => {
   it('picks the lowest delta items from a list of slots', () => {
     const items = pickItems(initialTarget, slots)
 

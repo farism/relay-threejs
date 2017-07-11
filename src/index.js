@@ -52,7 +52,7 @@ const load = () =>
   )
 
 // if (module.hot) {
-//   module.hot.accept('./App', load);
+//   module.hot.accept('./App', load)
 // }
 
 load()

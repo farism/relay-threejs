@@ -18,15 +18,13 @@ describe('#convertBonusToImbuePoints', () => {
   }
 
   Object.keys(values).forEach((bonusType: string) => {
-    // describe(`converts bonusType: ${bonusType}`, () => {
     values[bonusType].forEach((value: number, i: number) => {
       const actual = convertBonusToImbuePoints(bonusType, value)
       const expected = imbuePoints[bonusType][i]
-      it(`converts value "${value}" to "${expected}"`, () => {
+      it(`converts bonusType ${bonusType} value "${value}" to "${expected} imbue points"`, () => {
         expect(actual).to.eql(expected)
       })
     })
-    // })
   })
 })
 
@@ -102,13 +100,11 @@ describe('#convertBonusToUtilityPoints', () => {
   }
 
   Object.keys(values).forEach((bonusType: string) => {
-    describe(`converts bonusType: ${bonusType}`, () => {
-      const value = values[bonusType]
-      const actual = convertBonusToUtilityPoints(bonusType, value)
-      const expected = utilityPoints[bonusType]
-      it(`converts value "${value}" to "${expected}"`, () => {
-        expect(actual).to.eql(expected)
-      })
+    const value = values[bonusType]
+    const actual = convertBonusToUtilityPoints(bonusType, value)
+    const expected = utilityPoints[bonusType]
+    it(`converts bonusType ${bonusType} value "${value}" to "${expected} utility points"`, () => {
+      expect(actual).to.eql(expected)
     })
   })
 })
