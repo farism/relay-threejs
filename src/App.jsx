@@ -6,7 +6,7 @@ import makeRouteConfig from 'found/lib/makeRouteConfig'
 import createRender from 'found/lib/createRender'
 import {Resolver} from 'found-relay'
 import Route from 'found/lib/Route'
-import React from 'react'
+// import React from 'react'
 
 import * as UserList from './UserList'
 import * as User from './User'

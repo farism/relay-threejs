@@ -48,10 +48,13 @@
     "neutrino-preset-web": "^6.1.4",
     "react-hot-loader": "next",
     "relay-compiler": "^1.0.0",
-    "sync-request": "^4.1.0"
+    "sync-request": "^4.1.0",
+    "ts-node": "^3.2.0",
+    "typescript": "^2.4.1"
   },
   "dependencies": {
     "antd": "^2.11.2",
+    "array-permutation": "^0.2.0",
     "farce": "^0.2.1",
     "found": "^0.3.1",
     "found-relay": "^0.3.0-alpha.1",

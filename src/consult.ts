@@ -1,4 +1,5 @@
 import {BonusType, IItem} from './types'
+import {IImbueValues} from './metadata'
 
 interface IBonusValue {
   [key: number]: number
@@ -44,6 +45,20 @@ export const sumDeltas = (deltas: IBonuses): number =>
 
     return acc
   }, 0)
+
+export const getPossibleGemsToCreate = (
+  imbueValues: IImbueValues,
+  target: IBonuses,
+) => {
+  console.log(imbueValues, target)
+
+  return []
+}
+
+export const createItem = (target: IBonuses): IBonuses => {
+  // console.log(target)
+  return target
+}
 
 export const pickItem = (target: IBonuses, items: IItem[]): IItem =>
   items.reduce(

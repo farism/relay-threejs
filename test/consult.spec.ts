@@ -4,10 +4,13 @@ import slots from './fixtures/slots'
 import moh from './fixtures/moh'
 import sulph from './fixtures/sulph'
 
+import {imbueValues} from '../src/metadata'
 import {BonusType, Resistance, Stat} from '../src/types'
 
 import {
+  createItem,
   getBonusesAsObject,
+  getPossibleGemsToCreate,
   getDeltas,
   sumDeltas,
   pickItem,
@@ -122,8 +125,11 @@ describe('sumDeltas', () => {
   })
 })
 
-describe('createItem', () => {
-  it('creates an optimized item given the current target', () => {})
+describe.only('createItem', () => {
+  it('creates an optimized item given the current target', () => {
+    console.log(getPossibleGemsToCreate(imbueValues, initialTarget))
+    // console.log(createItem(initialTarget))
+  })
 })
 
 describe('pickItem', () => {

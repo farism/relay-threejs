@@ -226,6 +226,10 @@ array-flatten@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-2.1.1.tgz#426bb9da84090c1838d812c8150af20a8331e296"
 
+array-permutation@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/array-permutation/-/array-permutation-0.2.0.tgz#d4f9c9efb8589061712652f778381dee284f386c"
+
 array-tree-filter@^1.0.0, array-tree-filter@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/array-tree-filter/-/array-tree-filter-1.0.1.tgz#0a8ad1eefd38ce88858632f9cc0423d7634e4d5d"
